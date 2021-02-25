@@ -5,10 +5,20 @@
     "version": "2.4",
     "content_scripts": [{
         "js": [ "content.js" ],
+        "permissions": [
+            "https://*.medium.com/*",
+            "https://cdn.optimizely.com/*",
+            "tabs",
+            "activeTab",
+            "webRequest",
+            "webRequestBlocking",
+            "storage"
+        ],
         "matches": [
             "https://*.medium.com/*",
             "https://towardsdatascience.com/*",
-            "https://*.towardsai.net/*"
+            "https://*.towardsai.net/*",
+            "https://betterprogramming.pub/*"
         ]
     }],
      "icons": {
