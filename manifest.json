@@ -5,7 +5,11 @@
     "version": "2.4",
     "content_scripts": [{
         "js": [ "content.js" ],
-        "matches": ["https://*.medium.com/*"]
+        "matches": [
+            "https://*.medium.com/*",
+            "https://towardsdatascience.com/*",
+            "https://*.towardsai.net/*"
+        ]
     }],
      "icons": {
         "128": "icons/128.png",
